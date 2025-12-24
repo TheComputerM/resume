@@ -1,0 +1,21 @@
+{
+  "name": "@thecomputerm/resume",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "cv": "bunx --bun resumed render cv.json --theme jsonresume-theme-graph-paper-grid -o web/cv.html",
+    "postcv": "sed -i 's/ - Present//g' ./web/cv.html"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@resume/core": "npm:@jsonresume/core@^0.1.0",
+    "jsonresume-theme-graph-paper-grid": "^1.0.0",
+    "resumed": "^6.1.0"
+  }
+}
