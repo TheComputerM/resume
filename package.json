@@ -4,8 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "cv": "bunx --bun resumed render cv.json --theme jsonresume-theme-graph-paper-grid -o web/cv.html",
-    "postcv": "sed -i 's/ - Present//g' ./web/cv.html"
+    "cv": "bunx --bun resumed render cv.json --theme jsonresume-theme-graph-paper-grid -o docs/cv.html",
+    "postcv": "sed -i 's/ - Present//g' ./docs/cv.html"
   },
   "devDependencies": {
     "@types/bun": "latest"
