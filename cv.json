@@ -127,7 +127,15 @@
       "summary": "Contributed to the open-source ecosystem for the Julia Programming Language and other organisations, ending up in the world's top 174 contributors."
     }
   ],
-  "publications": [],
+  "publications": [
+    {
+      "name": "Continual-learning for Modelling Low-Resource Languages from Large Language Models",
+      "publisher": "EACL 2026 - European Chapter of the Association for Computational Linguistics",
+      "releaseDate": "2026-01-09",
+      "summary": "Presents a parameter‑efficient continual learning method that uses POS‑based code‑switching and a replay adapter to reduce catastrophic forgetting when adapting LLMs into SLMs for low‑resource languages.",
+      "url": "https://arxiv.org/abs/2601.05874"
+    }
+  ],
   "skills": [
     {
       "name": "Web Development",
@@ -185,14 +193,14 @@
       "keywords": ["SCPs", "Cosmic Horror"]
     },
     {
-      "name": "Badminton"
+      "name": "Badminton",
+      "keywords": ["Sports"]
     },
     {
-      "name": "Fast-paced Games",
+      "name": "Speedrunning",
       "keywords": ["FPS", "Arena Shooters", "Run-and-Gun"]
     }
   ],
-
   "projects": [
     {
       "name": "FFIgenPad",
