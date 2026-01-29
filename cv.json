@@ -132,51 +132,11 @@
       "name": "Continual-learning for Modelling Low-Resource Languages from Large Language Models",
       "publisher": "EACL 2026 - European Chapter of the Association for Computational Linguistics",
       "releaseDate": "2026-01-09",
-      "summary": "Presents a parameter‑efficient continual learning method that uses POS‑based code‑switching and a replay adapter to reduce catastrophic forgetting when adapting LLMs into SLMs for low‑resource languages.",
+      "summary": "Presents a parameter-efficient continual learning method that uses POS-based code-switching and a replay adapter to reduce catastrophic forgetting when adapting LLMs into SLMs for low-resource languages.",
       "url": "https://arxiv.org/abs/2601.05874"
     }
   ],
-  "skills": [
-    {
-      "name": "Web Development",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript / TypeScript",
-        "React",
-        "Tanstack",
-        "SolidJS",
-        "Svelte",
-        "NodeJS",
-        "Bun",
-        "Go"
-      ]
-    },
-    {
-      "name": "App Development",
-      "keywords": ["React Native", "Flutter", "Tauri"]
-    },
-    {
-      "name": "Systems Programming",
-      "keywords": ["Zig", "Go", "C", "Rust", "Dart"]
-    },
-    {
-      "name": "P2P Systems",
-      "keywords": ["Blockchain", "WebRTC", "IPFS", "Iroh"]
-    },
-    {
-      "name": "Databases",
-      "keywords": ["PostgreSQL", "CockroachDB", "SurrealDB", "SQLite"]
-    },
-    {
-      "name": "WebAssembly",
-      "keywords": ["WASI", "Emscripten", "Wasmer", "CheerpJ"]
-    },
-    {
-      "name": "DevOps",
-      "keywords": ["Docker / Podman", "Kubernetes", "Terraform"]
-    }
-  ],
+  "skills": [],
   "languages": [
     {
       "language": "English",
