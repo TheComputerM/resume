@@ -20,6 +20,11 @@
         "url": "https://github.com/thecomputerm"
       },
       {
+        "network": "LinkedIn",
+        "username": "mudit-somani2004",
+        "url": "https://www.linkedin.com/in/mudit-somani2004/"
+      },
+      {
         "network": "Codeforces",
         "username": "thecomputerm",
         "url": "https://codeforces.com/profile/thecomputerm"
@@ -133,7 +138,14 @@
       "publisher": "EACL 2026 - European Chapter of the Association for Computational Linguistics",
       "releaseDate": "2026-01-09",
       "summary": "Presents a parameter-efficient continual learning method that uses POS-based code-switching and a replay adapter to reduce catastrophic forgetting when adapting LLMs into SLMs for low-resource languages.",
-      "url": "https://arxiv.org/abs/2601.05874"
+      "url": "https://doi.org/10.48550/arXiv.2601.05874",
+      "authors": [
+        "Santosh Srinath K",
+        "**Mudit Somani**",
+        "Varun Reddy Padala",
+        "Prajna Devi Upadhyay",
+        "Abhijit Das"
+      ]
     }
   ],
   "skills": [],
