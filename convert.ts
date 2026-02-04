@@ -18,7 +18,7 @@ const converter = {
     position: entry.position,
     start_date: entry.startDate,
     end_date: entry.endDate,
-    location: entry.location,
+    location: entry.location === "Remote" ? undefined : entry.location,
     summary: entry.summary,
     highlights: entry.highlights,
   }),
@@ -30,12 +30,20 @@ const converter = {
     journal: entry.publisher,
     date: entry.releaseDate,
   }),
+  projects: (entry: (typeof cv.projects)[number]) => ({
+    name: `[${entry.name}](${entry.url})`,
+    start_date: entry.startDate,
+    end_date: entry.endDate,
+    summary: entry.description,
+    highlights: entry.highlights,
+  }),
   awards: (entry: (typeof cv.awards)[number]) => ({
-    bullet: `**${entry.title}**: ${entry.summary}`,
+    name: `${entry.title} @ ${entry.awarder}`,
+    date: entry.date,
+    summary: entry.summary,
   }),
   volunteer: (entry: (typeof cv.volunteer)[number]) => ({
-    company: entry.organization,
-    position: entry.position,
+    name: `${entry.position} @ ${entry.organization}`,
     start_date: entry.startDate,
     end_date: entry.endDate,
     summary: entry.summary,
@@ -54,27 +62,20 @@ const rendercv = {
       .map(converter.profiles),
     sections: {
       education: cv.education.map(converter.education),
-      experience: [
-        ...cv.work.map(converter.work),
-        ...cv.volunteer.map(converter.volunteer),
-      ].sort(
-        (a, b) =>
-          new Date(b.start_date).getTime() - new Date(a.start_date).getTime(),
-      ),
+      experience: cv.work.map(converter.work),
       publications: cv.publications.map(converter.publication),
+      projects: cv.projects.map(converter.projects),
       activities: [
+        ...cv.volunteer.map(converter.volunteer),
         ...cv.awards.map(converter.awards),
-        {
-          bullet:
-            "Maintainer for repositories with a total sum of over **2k stars on GitHub** along with contributions to many open-source projects, organizations and communitites.",
-        },
       ],
     },
   },
-
   design: {
     theme: "engineeringresumes",
   },
 };
 
-await Bun.file("./rendercv.yaml").write(YAML.stringify(rendercv, null, 2));
+const outputFilename = process.argv[2] || "./rendercv.yaml";
+await Bun.file(outputFilename).write(YAML.stringify(rendercv, null, 2));
+console.log(`YAML file written to: ${outputFilename}`);

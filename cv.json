@@ -53,6 +53,21 @@
       ]
     },
     {
+      "name": "Google Summer of Code @ Dart",
+      "location": "Remote",
+      "description": "Google Summer of Code is a global, online program focused on bringing new contributors into open source software development.",
+      "position": "GSoC Contributor",
+      "url": "https://summerofcode.withgoogle.com/archive/2024/projects/NDTqal0i",
+      "startDate": "2024-05-27",
+      "endDate": "2024-09-02",
+      "summary": "Created applications and tools to improve developer experience for the Dart programming language ecosystem along with stress testing the dart2wasm compiler and FFI capabilities.",
+      "highlights": [
+        "Cross-compiled LLVM to make a WebAssembly version for libclang, enabling C/C++ source parsing and AST traversal directly in the browser without any servers or dependencies.",
+        "Developed FFIgenPad, a web app using SolidJS that generates Dart foreign function bindings from C headers entirely in the browser, without the need for any server-side processing.",
+        "Developed Dart AST explorer, a web app that allows you to visualize and explore the Abstract Syntax Tree (AST) of Dart code snippets in real-time."
+      ]
+    },
+    {
       "name": "ByteLeap",
       "location": "Remote",
       "description": "ByteLeap is a top-notch Product Engineering studio. Leveraging cutting-edge technologies and a deep understanding of user-centric design to deliver superior product engineering solutions.",
@@ -91,19 +106,6 @@
         "Curated and led the development of 3+ open-source projects that were used by over 2000+ students on campus.",
         "Streamlined onboarding process to happen every 2 months instead of once every semester to better capture student interest and reduce onboarding friction.",
         "Organized workshops and mentored students on competitive programming, web development, and open-source contributions."
-      ]
-    },
-    {
-      "organization": "Google Summer of Code @ Dart",
-      "position": "Contributor",
-      "url": "https://summerofcode.withgoogle.com/archive/2024/projects/NDTqal0i",
-      "startDate": "2024-05-27",
-      "endDate": "2024-09-02",
-      "summary": "Created applications and tools to improve developer experience for the Dart programming language ecosystem along with stress testing the dart2wasm compiler and FFI capabilities.",
-      "highlights": [
-        "Cross-compiled LLVM to make a WebAssembly version for libclang, enabling C/C++ source parsing and AST traversal directly in the browser without any servers or dependencies.",
-        "Developed FFIgenPad, a web app using SolidJS that generates Dart foreign function bindings from C headers entirely in the browser, without the need for any server-side processing.",
-        "Developed Dart AST explorer, a web app that allows you to visualize and explore the Abstract Syntax Tree (AST) of Dart code snippets in real-time."
       ]
     }
   ],
@@ -188,7 +190,7 @@
       "url": "https://github.com/thecomputerm/ffigenpad",
       "roles": ["Contributor", "Developer"],
       "entity": "Google Summer of Code",
-      "type": "volunteering"
+      "type": "application"
     }
   ],
   "meta": {

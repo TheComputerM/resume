@@ -5,8 +5,9 @@
   "private": true,
   "scripts": {
     "cv": "bunx --bun resumed render cv.json --theme jsonresume-theme-graph-paper-grid -o docs/cv.html",
-    "postcv": "sed -i 's/ - Present//g' ./docs/cv.html",
-    "resume": "bun run convert.ts && uv run rendercv render rendercv.yaml"
+    "postcv": "sed -i '' 's/ - Present//g' ./docs/cv.html",
+    "preresume": "bun run convert.ts",
+    "resume": "uv run rendercv render rendercv.yaml -nopng -nomd --pdf-path ./docs/resume.pdf"
   },
   "devDependencies": {
     "@types/bun": "latest"
