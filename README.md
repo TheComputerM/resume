@@ -21,3 +21,18 @@ If you would like to provide a testimonial or recommendation for my resume or CV
 ```
 
 Your feedback and support are greatly appreciated!
+
+## Automatic Gist Updates
+
+This repository includes a GitHub Action that automatically updates a public GitHub Gist with the latest version of `cv.json` whenever it's updated on the main branch.
+
+### Setup Instructions
+
+To enable this functionality, you need to configure a GitHub secret in your repository:
+
+**GIST_TOKEN**: A GitHub Personal Access Token with `gist` scope
+- Go to GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)
+- Generate a new token with the `gist` scope
+- Copy the token and add it as a repository secret named `GIST_TOKEN`
+
+Once configured, the workflow will automatically update your gist with `resume.json` whenever `cv.json` is pushed to the main branch.
