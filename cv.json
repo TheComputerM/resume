@@ -41,6 +41,20 @@
       "name": "Cockroach Labs",
       "location": "Bangalore, India",
       "description": "Cockroach Labs is the creator of CockroachDB, the cloud native, distributed SQL database 338+ enterprises trust to run mission-critical applications.",
+      "position": "Member of Technical Staff",
+      "url": "https://www.cockroachlabs.com",
+      "startDate": "2026-07-06",
+      "summary": "Developed internal AI-powered diagnostic platforms and cloud-native infrastructure for orchestrating stateful, durable AI agents.",
+      "highlights": [
+        "Built Support Workspace, an internal platform enabling technical support engineers to inspect 100s of GBs of debug data via automated ingestion, agentic workflows for preliminary root-cause analysis, and an interactive AI copilot.",
+        "Integrated a suite of diagnostic and developer tools into Support Workspace, including a SQL editor and viewer, file explorer, pprof viewer, an interactive Docker container shell, and an agent skills collection.",
+        "Architected Kubernetes-orchestrated infrastructure for durable AI agents supporting isolated sandboxes, attached MCP servers, customizable agent harnesses, and stateful sessions backed by GCS buckets as memory stores."
+      ]
+    },
+    {
+      "name": "Cockroach Labs",
+      "location": "Bangalore, India",
+      "description": "Cockroach Labs is the creator of CockroachDB, the cloud native, distributed SQL database 338+ enterprises trust to run mission-critical applications.",
       "position": "Summer SWE Intern",
       "url": "https://www.cockroachlabs.com",
       "startDate": "2025-05-19",
@@ -117,7 +131,7 @@
       "studyType": "Bachelor (Hons.)",
       "startDate": "2022-10-01",
       "endDate": "2026-05-01",
-      "score": "8.0",
+      "score": "8.24/10.0",
       "courses": [
         "BITSF464 - Machine Learning",
         "BITSF452 - Blockchain Technology",
@@ -143,7 +157,7 @@
       "url": "https://doi.org/10.48550/arXiv.2601.05874",
       "authors": [
         "Santosh Srinath K",
-        "**Mudit Somani**",
+        "Mudit Somani",
         "Varun Reddy Padala",
         "Prajna Devi Upadhyay",
         "Abhijit Das"

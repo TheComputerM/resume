@@ -17,6 +17,15 @@ cv:
         end_date: 2026-05-01
     experience:
       - company: Cockroach Labs
+        position: Member of Technical Staff
+        start_date: 2026-07-06
+        location: "Bangalore, India"
+        summary: "Developed internal AI-powered diagnostic platforms and cloud-native infrastructure for orchestrating stateful, durable AI agents."
+        highlights:
+          - "Built Support Workspace, an internal platform enabling technical support engineers to inspect 100s of GBs of debug data via automated ingestion, agentic workflows for preliminary root-cause analysis, and an interactive AI copilot."
+          - "Integrated a suite of diagnostic and developer tools into Support Workspace, including a SQL editor and viewer, file explorer, pprof viewer, an interactive Docker container shell, and an agent skills collection."
+          - "Architected Kubernetes-orchestrated infrastructure for durable AI agents supporting isolated sandboxes, attached MCP servers, customizable agent harnesses, and stateful sessions backed by GCS buckets as memory stores."
+      - company: Cockroach Labs
         position: Summer SWE Intern
         start_date: 2025-05-19
         end_date: 2025-07-31
@@ -47,7 +56,7 @@ cv:
       - title: Continual-learning for Modelling Low-Resource Languages from Large Language Models
         authors:
           - Santosh Srinath K
-          - "**Mudit Somani**"
+          - Mudit Somani
           - Varun Reddy Padala
           - Prajna Devi Upadhyay
           - Abhijit Das
