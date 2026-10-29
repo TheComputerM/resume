@@ -1,11 +1,11 @@
 {
   "name": "@thecomputerm/resume",
-  "module": "index.ts",
   "type": "module",
   "private": true,
   "scripts": {
-    "cv": "bunx --bun resumed render cv.json --theme jsonresume-theme-graph-paper-grid -o docs/cv.html",
-    "postcv": "sed -i '' 's/ - Present//g' ./docs/cv.html",
+    "start": "resume serve -d docs -r cv.json -t @jsonresume/jsonresume-theme-consultant-polished",
+    "cv": "resume export docs/cv.html -r cv.json -t @jsonresume/jsonresume-theme-consultant-polished",
+    "lint": "resume validate -r cv.json && resume audit cv.json --theme @jsonresume/jsonresume-theme-consultant-polished",
     "preresume": "bun run convert.ts",
     "resume": "uv run rendercv render rendercv.yaml -nopng -nomd --pdf-path ./docs/resume.pdf"
   },
@@ -13,11 +13,10 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^7.0.2"
   },
   "dependencies": {
-    "@resume/core": "npm:@jsonresume/core@^0.1.0",
-    "jsonresume-theme-graph-paper-grid": "^1.0.0",
-    "resumed": "^6.1.0"
+    "@jsonresume/jsonresume-theme-consultant-polished": "^1.0.4",
+    "resume-cli": "^3.8.3"
   }
 }
