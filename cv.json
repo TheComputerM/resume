@@ -191,6 +191,52 @@
   ],
   "projects": [
     {
+      "name": "localbox",
+      "description": "A fast, general-purpose sandboxed code execution engine built in Go for running untrusted code using Linux namespaces, cgroups v2, and Nix.",
+      "highlights": [
+        "Built a concurrent sandbox pool atop Isolate with Linux namespaces, chroot, and host-shared cgroups v2 to enforce fine-grained CPU, memory, process, file, and network limits.",
+        "Integrated Nix to dynamically provision arbitrary compiler and runtime packages on demand alongside preconfigured multi-language engines.",
+        "Exposed a multi-phase execution REST API with OpenAPI schemas via Chi and Huma supporting multi-file mounts, custom workflows, and shell-free execution for accurate runtime metrics."
+      ],
+      "keywords": ["Go", "Isolate", "Nix", "Linux", "cgroups", "Docker", "Sandboxing"],
+      "startDate": "2025-09-09",
+      "endDate": "2026-09-09",
+      "url": "https://github.com/thecomputerm/localbox",
+      "roles": ["Creator", "Maintainer"],
+      "type": "application"
+    },
+    {
+      "name": "lazycph",
+      "description": "A terminal UI competitive programming helper written in Go for managing and executing test cases directly from the terminal.",
+      "highlights": [
+        "Built an interactive terminal interface with mouse and keyboard navigation using Bubble Tea, Bubbles, Lipgloss, and BubbleZone.",
+        "Implemented a local HTTP listener compatible with the Competitive Companion browser extension to automatically import problem metadata and sample test cases.",
+        "Designed a configurable language engine runner supporting both compiled and interpreted workflows, output diffing, and seamless editor integration."
+      ],
+      "keywords": ["Go", "TUI", "Bubble Tea", "Competitive Programming", "CLI"],
+      "startDate": "2025-11-29",
+      "endDate": "2026-05-31",
+      "url": "https://github.com/thecomputerm/lazycph",
+      "roles": ["Creator", "Maintainer"],
+      "type": "application"
+    },
+    {
+      "name": "Demochain",
+      "description": "A serverless peer-to-peer blockchain network running entirely in the browser using WebRTC for interactive learning and demonstration.",
+      "highlights": [
+        "Implemented a browser-native blockchain from scratch featuring SHA-256 Proof-of-Work consensus with configurable difficulty, nonce-ordered transactions, and mempool management.",
+        "Built decentralized peer-to-peer block and transaction gossip over WebRTC (Trystero) with Firebase signaling and compact binary serialization via CBOR.",
+        "Secured wallets, transaction signing, and block verification using Ed25519 cryptography in a reactive SolidJS and SolidStart web interface."
+      ],
+      "keywords": ["SolidJS", "TypeScript", "WebRTC", "Blockchain", "Ed25519", "CBOR"],
+      "startDate": "2024-11-23",
+      "endDate": "2025-05-09",
+      "url": "https://github.com/thecomputerm/demochain",
+      "roles": ["Creator", "Developer"],
+      "entity": "BITS Pilani, Hyderabad",
+      "type": "application"
+    },
+    {
       "name": "FFIgenPad",
       "description": "A web application that generates Dart FFI bindings from C header files directly in the browser using LibClang and WebAssembly.",
       "highlights": [
@@ -204,6 +250,38 @@
       "url": "https://github.com/thecomputerm/ffigenpad",
       "roles": ["Contributor", "Developer"],
       "entity": "Google Summer of Code",
+      "type": "application"
+    },
+    {
+      "name": "LibClang WASM",
+      "description": "A standalone WebAssembly build of LLVM's LibClang enabling C/C++ source parsing and AST traversal in browsers and WASM runtimes.",
+      "highlights": [
+        "Cross-compiled LLVM and Clang (up to v21) to WebAssembly using Emscripten, CMake, and Ninja with custom patches for virtualized executable paths.",
+        "Exported core LibClang symbols alongside memory management and Emscripten filesystem APIs as a modular ES6 library for seamless FFI interop.",
+        "Automated reproducible builds and prebuilt archive releases via GitHub Actions and Nix flakes."
+      ],
+      "keywords": ["LLVM", "LibClang", "WASM", "Emscripten", "CMake", "Nix"],
+      "startDate": "2024-08-15",
+      "endDate": "2026-01-13",
+      "url": "https://github.com/thecomputerm/libclang-wasm",
+      "roles": ["Creator", "Maintainer"],
+      "entity": "Google Summer of Code",
+      "type": "library"
+    },
+    {
+      "name": "Lex",
+      "description": "A cross-platform lecture streaming and academic productivity platform built with Flutter and a companion Go backend, serving over 3,000 active student users at BITS Pilani, Hyderabad.",
+      "highlights": [
+        "Built Multipartus, enabling students to search courses with BM25 full-text indexing, browse lectures across sections and semesters, and download timestamped slide decks.",
+        "Engineered a Go and Gin backend backed by SurrealDB and Logto OIDC authentication, rewriting encrypted HLS (m3u8) manifests to support AES-128 key delivery and multi-angle playback.",
+        "Developed a responsive cross-platform Flutter client across web, desktop, and mobile using MediaKit for video streaming and Signals for reactive state management."
+      ],
+      "keywords": ["Flutter", "Dart", "Go", "Gin", "SurrealDB", "OIDC", "HLS"],
+      "startDate": "2023-06-28",
+      "endDate": "2025-07-17",
+      "url": "https://github.com/crux-bphc/lex",
+      "roles": ["Lead Developer", "Maintainer"],
+      "entity": "CRUX - the Coding Club of BITS Pilani, Hyderabad",
       "type": "application"
     }
   ],
